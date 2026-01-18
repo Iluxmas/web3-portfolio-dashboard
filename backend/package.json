@@ -4,11 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon",
     "build": "tsc",
     "start": "node dist/server.js",
-    "lint": "eslint .",
-    "format": "prettier --write \"src/**/*.{ts,tsx,json}\""
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -30,7 +29,7 @@
     "globals": "^17.0.0",
     "nodemon": "^3.1.11",
     "prettier": "^3.8.0",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
