@@ -1,4 +1,4 @@
-import { createPublicClient, http, createWalletClient } from 'viem';
+import { createPublicClient, http, createWalletClient, custom } from 'viem';
 import { mainnet } from 'viem/chains';
 
 // a read‑only RPC client for requests to your backend/indexer,
@@ -10,14 +10,17 @@ export const publicClient = createPublicClient({
   ),
 });
 
-// the connector we'll use to talk to MetaMask, Trust, etc.
-export const client = createPublicClient({ chain: mainnet, transport: http() });
+// helper for wallet interactions; we don't need a standalone public
+// client here since we just wrap the injected provider directly.
 
 // returns a wallet client bound to whatever provider the user has injected
 export function getWalletClient() {
+  if (typeof window === 'undefined' || !(window as any).ethereum) {
+    throw new Error('No Ethereum provider available');
+  }
   return createWalletClient({
     chain: mainnet,
-    transport: client.connect(), // this returns a provider
+    transport: custom((window as any).ethereum),
   });
 }
 

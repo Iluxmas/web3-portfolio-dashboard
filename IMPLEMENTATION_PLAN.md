@@ -60,18 +60,18 @@ No broken states between steps.
 
 - [x] Integrate `viem`
 - [x] Implement wallet connection logic
-- [ ] Create Zustand store:
-  - [ ] wallet address
-  - [ ] connection status
-- [ ] Create UI:
-  - [ ] connect wallet button
-  - [ ] connected state display
-- [ ] Handle:
-  - [ ] disconnect
-  - [ ] rejected connection
-- [ ] Verify:
-  - [ ] wallet connects
-  - [ ] state persists on refresh
+- [x] Create Zustand store:
+  - [x] wallet address
+  - [x] connection status
+- [x] Create UI:
+  - [x] connect wallet button
+  - [x] connected state display
+- [x] Handle:
+  - [x] disconnect
+  - [x] rejected connection
+- [x] Verify:
+  - [x] wallet connects
+  - [x] state persists on refresh
 
 ---
 

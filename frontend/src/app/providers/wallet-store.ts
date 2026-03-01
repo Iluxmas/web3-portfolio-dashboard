@@ -19,6 +19,14 @@ export const useWalletStore = create<WalletState>()(
       status: 'disconnected',
       connect: async () => {
         set({ status: 'connecting' });
+
+        // early guard for missing web3 provider
+        if (typeof window === 'undefined' || !(window as any).ethereum) {
+          set({ status: 'error' });
+          console.error('No Ethereum provider available');
+          return;
+        }
+
         try {
           const [addr] = await requestAccounts();
           const chain = await getChainId();

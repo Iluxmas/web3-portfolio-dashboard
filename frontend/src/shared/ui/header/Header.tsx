@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ConnectButton } from '@/features/wallet/ConnectButton';
 
 export function Header() {
   return (
@@ -8,12 +9,15 @@ export function Header() {
           <Link to="/" className="text-xl font-bold">
             Web3 Portfolio Dashboard
           </Link>
-          <nav className="space-x-6">
+          <nav className="flex items-center space-x-6">
             <Link to="/" className="hover:text-blue-400 transition-colors">
               Home
             </Link>
             {/* Future navigation items will go here */}
           </nav>
+          <div className="ml-4">
+            <ConnectButton />
+          </div>
         </div>
       </div>
     </header>

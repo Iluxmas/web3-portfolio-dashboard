@@ -40,6 +40,7 @@ export default defineConfig([
           endOfLine: "auto"
         },
       ],
+      "@typescript-eslint/no-explicit-any": "warn"
     },
   },
 ])
