@@ -37,6 +37,7 @@ export default defineConfig([
           singleQuote: true,
           semi: true,
           trailingComma: 'all',
+          endOfLine: "auto"
         },
       ],
     },
