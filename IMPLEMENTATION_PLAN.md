@@ -6,6 +6,7 @@ No broken states between steps.
 ---
 
 ## Milestone 0 — Project Initialization & Tooling
+
 **Goal:** Stable dev environment with enforced code quality.
 
 - [x] Initialize monorepo (frontend + backend)
@@ -30,6 +31,7 @@ No broken states between steps.
 ---
 
 ## Milestone 1 — Base App Skeleton (FSD)
+
 **Goal:** App shell with correct architecture and routing.
 
 - [x] Define Feature-Sliced Design (FSD) structure:
@@ -53,10 +55,11 @@ No broken states between steps.
 ---
 
 ## Milestone 2 — Wallet Connection (Read-only UI)
+
 **Goal:** Wallet can connect and state is visible.
 
-- [ ] Integrate `viem`
-- [ ] Implement wallet connection logic
+- [x] Integrate `viem`
+- [x] Implement wallet connection logic
 - [ ] Create Zustand store:
   - [ ] wallet address
   - [ ] connection status
@@ -73,6 +76,7 @@ No broken states between steps.
 ---
 
 ## Milestone 3 — Network Validation
+
 **Goal:** Correct network handling and user feedback.
 
 - [ ] Detect current chain
@@ -87,6 +91,7 @@ No broken states between steps.
 ---
 
 ## Milestone 4 — Backend API (Indexer Proxy)
+
 **Goal:** Backend returns normalized portfolio data.
 
 - [ ] Integrate indexer API (e.g. Covalent / Alchemy)
@@ -101,6 +106,7 @@ No broken states between steps.
 ---
 
 ## Milestone 5 — Portfolio Data (Read-only)
+
 **Goal:** Display balances using TanStack Query.
 
 - [ ] Setup TanStack Query
@@ -117,6 +123,7 @@ No broken states between steps.
 ---
 
 ## Milestone 6 — Transaction History
+
 **Goal:** Show recent wallet activity.
 
 - [ ] Add backend endpoint:
@@ -134,6 +141,7 @@ No broken states between steps.
 ---
 
 ## Milestone 7 — State Persistence & UX Polish
+
 **Goal:** Stable app behavior across sessions.
 
 - [ ] Persist wallet & chain state
@@ -149,6 +157,7 @@ No broken states between steps.
 ---
 
 ## Milestone 8 — Testing Foundation
+
 **Goal:** Core logic is test-covered.
 
 - [ ] Setup Vitest
@@ -163,6 +172,7 @@ No broken states between steps.
 ---
 
 ## Milestone 9 — Documentation & Cleanup
+
 **Goal:** Repo is understandable and presentable.
 
 - [ ] Update README:
@@ -176,6 +186,7 @@ No broken states between steps.
 ---
 
 ## Notes
+
 - No milestone introduces unfinished or broken flows
 - Each step extends the previous one
 - Future features (multi-chain, NFTs, PnL) are intentionally excluded
